@@ -1,0 +1,61 @@
+---
+title: "Pipeline Automation"
+description: "Customize your pipeline's phases and stages, give stages goals that run automatically, and see your deals on a map"
+icon: "bolt"
+---
+
+The Deals page is more than a board. You can shape the pipeline to match how your team works, and give any stage a goal that Apers runs on its own whenever one of your deals lands there.
+
+## Configure Your Pipeline
+
+Click **Configure Pipeline** on the Deals page to open the pipeline editor.
+
+- **Phases** group the stages (columns) of your pipeline, for example an "Acquisition" phase holding New, Screening, and In Review. Click **Add Phase** to create one, and rename it by editing its name.
+- **Stages** live inside phases. Type a name in **Add stage** to create one, rename a stage in place, and use **Move to Phase** to put it in a different phase.
+- **Order** follows the editor: drag phases and stages by their handles, or use the **Move Up** and **Move Down** buttons.
+
+<Note>
+  A stage that still has deals in it can't be deleted. Move or remove its deals first. Renaming a stage moves its deals and its goal along with it.
+</Note>
+
+Your phases and stage order are your own view of the pipeline. Collaborators on a shared deal can arrange their pipelines differently.
+
+## Stage Goals
+
+A stage goal is a prompt that runs automatically when one of your deals enters that stage. It starts a new chat session on the deal and does the work for you: draft an IC memo when a deal reaches IC Review, build a first model when it moves to Screening, and so on.
+
+<Steps>
+  <Step title="Open the stage's goal">
+    In **Configure Pipeline**, click **Set Goal** on a stage. You can also click the lightning icon on the stage's column header in Pipeline view.
+  </Step>
+  <Step title="Write the goal">
+    Describe what Apers should do, the same way you'd write a chat message. For example: "Draft an IC memo for this deal."
+  </Step>
+  <Step title="Choose whether to auto-approve">
+    **Auto-approve actions** is on by default, since nobody is watching when a goal runs. Turn it off if you want to approve each edit yourself.
+  </Step>
+  <Step title="Save">
+    Click **Save**. To turn a goal off later, open it with **Edit Goal**, clear the text, and save.
+  </Step>
+</Steps>
+
+### How goals run
+
+- A goal runs on deals **you own**. On a shared deal, the deal owner's goal for that stage is the one that runs, and it uses the owner's credits.
+- Each stage's goal runs automatically **at most once per deal**.
+- Saving a goal doesn't run it on deals already sitting in that stage. Those deals show a **Run goal** strip on their card: click it to run the goal on that deal.
+- While a goal works, the deal's card shows **Running** (or **Queued** while it waits to start), then **Ready** when it's done. Click the strip to open the chat.
+
+<Warning>
+  Goals use credits just like a chat you start yourself.
+</Warning>
+
+## Map View
+
+Switch to **Map** on the Deals page to see your deals plotted by address.
+
+- The **On map** panel lists every deal that has an address. Check or uncheck deals to choose which ones appear, or use **Select all** and **Clear all**.
+- Click a pin and choose **Open deal** to go to that deal.
+- Deals without an address don't appear. Add a property address to a deal to plot it.
+
+For the basics of the Table and Pipeline views, see [Manage Pipeline](/deals/pipeline).
