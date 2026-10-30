@@ -4,15 +4,9 @@ description: "Learn about the different ways to view and organize your deals"
 icon: "grid-2"
 ---
 
-The Deal page offers three ways to view your deals. Choose the one that fits your workflow.
+The Deals page offers three ways to view your deals. Choose the one that fits your workflow.
 
 ## View Options
-
-<ResponseField name="Cards" type="view">
-  Displays each deal as a card. This makes it easy to see deal details at a glance.
-
-  Best for: Quick browsing and visual overview.
-</ResponseField>
 
 <ResponseField name="Table" type="view">
   Displays deals in a spreadsheet-style table with rows and columns.
@@ -20,15 +14,21 @@ The Deal page offers three ways to view your deals. Choose the one that fits you
   Best for: Users with many deals who need to scan and sort quickly.
 </ResponseField>
 
-<ResponseField name="Kanban" type="view">
-  Displays deals in a CRM-style board with columns for each stage.
+<ResponseField name="Pipeline" type="view">
+  Displays deals in a CRM-style board with columns for each stage. This is the default view.
 
   Best for: Managing your deal pipeline and tracking progress.
 </ResponseField>
 
-## Using Kanban View
+<ResponseField name="Map" type="view">
+  Displays deals on a map by their address.
 
-Kanban view organizes deals into stages:
+  Best for: Seeing where your deals are located.
+</ResponseField>
+
+## Using Pipeline View
+
+Pipeline view organizes deals into stages. A new pipeline starts with these default stages:
 
 | Stage       | Description                          |
 | ----------- | ------------------------------------ |
@@ -37,9 +37,11 @@ Kanban view organizes deals into stages:
 | **Pass**    | Deals you decided not to pursue      |
 | **Invest**  | Deals you're moving forward with     |
 
+You can change them to match your process: click **Configure Pipeline** to add, rename, reorder, or delete stages and group them into phases.
+
 <Steps>
-  <Step title="Switch to Kanban">
-    Click the **Kanban** view option on the Deal page.
+  <Step title="Switch to Pipeline">
+    Click the **Pipeline** view option on the Deals page.
   </Step>
   <Step title="Drag and drop">
     Move deals between columns as their status changes.
@@ -50,5 +52,5 @@ Kanban view organizes deals into stages:
 </Steps>
 
 <Info>
-  Kanban view makes it easy to see your entire pipeline at once and manage deal flow.
+  Pipeline view makes it easy to see your entire pipeline at once and manage deal flow.
 </Info>

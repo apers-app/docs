@@ -16,8 +16,8 @@ Playbook is a powerful feature that allows users to:
 ## Creating a Playbook
 
 <Steps>
-  <Step title="Navigate to Playbook">
-    Click **Playbook** from the left side panel.
+  <Step title="Navigate to Playbooks">
+    Click **Playbooks** from the left side panel.
   </Step>
   <Step title="Create a new Playbook">
     Click **"Create New Playbook"** to begin.
@@ -37,10 +37,10 @@ Playbook is a powerful feature that allows users to:
 
 ## Configuring Your Playbook (Precision Mode)
 
-In Precision Mode, you can define the following:
+In Precision Mode, a three-step wizard (**Thesis**, **Criteria**, **Review**) lets you define the following:
 
 <ResponseField name="Investment Thesis" type="section">
-  Define your strategy name (can differ from fund mandate), asset classes, and strategies.
+  Define your strategy name (can differ from fund mandate).
 </ResponseField>
 
 <ResponseField name="Playbook Status" type="section">
@@ -48,19 +48,19 @@ In Precision Mode, you can define the following:
 
   - **Draft** — Work in progress
   - **Active** — Ready to use
-  - **Inactive** — Archived or paused
+  - **Inactive** — Archived or paused (a label only; it can still be run on deals)
 </ResponseField>
 
 <ResponseField name="Target Criteria" type="section">
   Specify asset classes, property type, strategy, and target geography (e.g., US Sun Belt markets with strong population growth).
 </ResponseField>
 
-<ResponseField name="Investment Objectives" type="section">
-  Define objectives such as IRR, DSCR, and other performance criteria.
+<ResponseField name="Investment Objective" type="section">
+  Describe your overall goal in your own words (e.g., generate 15%+ net IRR by acquiring and renovating underperforming assets).
 </ResponseField>
 
-<ResponseField name="Quantitative Criteria" type="section">
-  Set must-pass criteria (e.g., deal size) and return targets (e.g., IRR must be more than 15%).
+<ResponseField name="Criteria" type="section">
+  Set must-pass criteria (e.g., deal size), return targets (e.g., IRR must be more than 15%), and optional free-form criteria the structured rows don't capture.
 </ResponseField>
 
 ## Using Playbook with Deals
@@ -73,10 +73,10 @@ In Precision Mode, you can define the following:
     Click the **"Run Playbook"** button.
   </Step>
   <Step title="Select your investment thesis">
-    Choose the Playbook you want to apply to this Deal.
+    Choose the Playbook you want to apply to this Deal and click **Run Analysis**.
   </Step>
-  <Step title="Confirm attachment">
-    A **green dot** will appear on the "Run Playbook" button, indicating the Playbook is active.
+  <Step title="Review the analysis">
+    The Playbook is attached to the Deal, and Apers starts a new chat that evaluates the Deal against your criteria and recommends **Pass**, **Dive Deeper**, or **Invest**.
   </Step>
 </Steps>
 

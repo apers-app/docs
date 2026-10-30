@@ -16,6 +16,10 @@ Built with [Mintlify](https://mintlify.com).
 | **Playbook** | Codify your investment thesis; let Apers evaluate deals against it |
 | **Workflows** | Automate repetitive deal tasks with custom or template workflows |
 | **Library** | Store templates, crystallize learnings, reuse across future deals |
+| **Presentations** | Create and edit slide decks |
+| **Documents** | Create and edit memos, reports, and other documents |
+| **Marketplace** | Get ready-made models and files |
+| **Credits** | Plans, credits, purchasing, and referrals |
 
 ---
 
@@ -54,10 +58,11 @@ deals/                  # Deal Management section
 playbook/               # Playbook section
 workflows/              # Workflows section
 library/                # Library section
-images/                 # Screenshots and diagrams
+presentations/          # Presentations section
+documents/              # Documents section
+marketplace/            # Marketplace section
+credits/                # Credits section
 logo/                   # Brand assets
-snippets/               # Reusable MDX snippets
-api-reference/          # API reference pages
 ```
 
 ---

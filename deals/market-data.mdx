@@ -12,12 +12,12 @@ The Market Data tab gives you local demographics and current mortgage rates for 
 
 Apers pulls census-tract-level demographics for any US address. Data points include:
 
-| Category        | Examples                                      |
-| --------------- | --------------------------------------------- |
-| **Population**  | Total population, population density           |
-| **Income**      | Median household income, income distribution   |
-| **Education**   | Education attainment levels                    |
-| **Housing**     | Homeownership rate, median home value          |
+| Category        | Data points                                       |
+| --------------- | ------------------------------------------------- |
+| **Population**  | Total population, median age                      |
+| **Income**      | Median household income                           |
+| **Education**   | Share of adults with a bachelor's degree or higher |
+| **Housing**     | Owner-occupied and renter-occupied share of homes  |
 
 <Info>
   Demographics are scoped to the census tract surrounding the property address, giving you a precise view of the immediate area.
@@ -25,7 +25,7 @@ Apers pulls census-tract-level demographics for any US address. Data points incl
 
 ### Mortgage Rates
 
-Apers provides current national mortgage rates:
+Apers provides current national mortgage rates from Freddie Mac's weekly survey, retrieved through FRED (Federal Reserve Bank of St. Louis):
 
 - **30-year fixed** rate
 - **15-year fixed** rate
@@ -42,7 +42,7 @@ These rates update automatically so you always have a current reference point wh
     Inside the deal view, click the **Market Data** tab.
   </Step>
   <Step title="Review the data">
-    Demographics and mortgage rates load automatically based on the property address associated with the deal.
+    Demographics and mortgage rates load automatically based on the property address associated with the deal. If they don't load, click **Get Market Data**.
   </Step>
 </Steps>
 
@@ -52,6 +52,6 @@ These rates update automatically so you always have a current reference point wh
 
 ## Why It Matters
 
-- **Faster underwriting**: See income levels, population trends, and housing stats alongside your deal files.
+- **Faster underwriting**: See income levels, population, and housing stats alongside your deal files.
 - **Financing context**: Reference current mortgage rates while building or reviewing financial models.
 - **Single workspace**: No need to switch to external sites for basic market research.
