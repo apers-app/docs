@@ -1,0 +1,49 @@
+---
+title: "Chat Modes"
+description: "Switch between the default model, Max Mode, and the Alternate Model, and retry a response in a different mode"
+icon: "sliders"
+---
+
+Every chat runs on Apers' default model unless you choose otherwise. Two toggles in the chat composer change that: **Max** for the most capable model, and the **Alternate model** as a backup. Eco Mode switches on by itself when you run out of credits.
+
+## The Modes
+
+<ResponseField name="Default model" type="mode">
+  What every chat uses unless you turn on another mode. The right choice for most work.
+</ResponseField>
+
+<ResponseField name="Max Mode" type="mode">
+  The most capable model, for complex analysis. Click **Max** in the chat composer to turn it on. It uses about twice the credits of the default model, and it's available on Pro and above.
+</ResponseField>
+
+<ResponseField name="Alternate Model" type="mode">
+  A backup model from a different AI provider. Turn it on with the **Alternate model** toggle (the layers icon) in the chat composer if the default model is having trouble or isn't responding. It's available on every plan, including in Eco Mode.
+</ResponseField>
+
+<ResponseField name="Eco Mode" type="mode">
+  Not a toggle: subscribers switch to Eco Mode automatically when their credit balance reaches zero, and chat continues at no credit cost on a lighter model. See [When You Run Out](/credits/overview#when-you-run-out).
+</ResponseField>
+
+## How the Modes Combine
+
+- **Max Mode and the Alternate Model are mutually exclusive.** Turning one on turns the other off.
+- **Max Mode is unavailable in Eco Mode.** If you had Max Mode on, it comes back once your credits are refilled.
+- **The Alternate Model works in Eco Mode**, still at no credit cost, so it's a backup for Eco Mode too.
+- **Your choice stays on for that browser tab** until you turn it off, so new messages in the tab keep using it.
+
+<Tip>
+  Start with the default model. Reach for Max Mode when a task needs deeper reasoning, such as reviewing a complex model for errors or working through a tricky deal structure.
+</Tip>
+
+## Retrying a Response in Another Mode
+
+If a response isn't what you wanted, click the **Regenerate response** icon under it. The menu offers:
+
+| Option | What it does |
+| ------ | ------------ |
+| **Try again** | Runs the same request again in your current mode, shown on the right |
+| **Try again with Max Mode** | Retries with Max Mode. Not shown when you're already in Max Mode or in Eco Mode |
+| **Try again with default model** | Shown when you're in Max Mode or on the Alternate Model |
+| **Try again with Alternate Model** | Retries on the Alternate Model. Not shown when you're already on it |
+
+If your plan doesn't include Max Mode, the Max Mode option is labeled **Pro plan**.

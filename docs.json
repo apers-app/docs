@@ -48,11 +48,13 @@
               "ingestion",
               "analyze-deals",
               "email-to-apers",
+              "mobile",
               "build-strategies",
               "workflow-automation",
               "saving-knowledge",
               "templates",
-              "documents/overview"
+              "documents/overview",
+              "documents/organizing-the-data-room"
             ]
           }
         ]
@@ -81,7 +83,9 @@
         "pages": [
           "deals/overview",
           "deals/chats",
+          "deals/chat-modes",
           "deals/pipeline",
+          "deals/pipeline-automation",
           "deals/manage-deals",
           "deals/inside-a-deal",
           "deals/deal-tabs",

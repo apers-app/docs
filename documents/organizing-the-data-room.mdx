@@ -1,0 +1,55 @@
+---
+title: "Organizing the Data Room"
+description: "Use folders, auto-organize, and skills to keep a deal's Data Room easy to navigate"
+icon: "folder-tree"
+---
+
+A deal's Data Room holds every file Apers and your team work from. Folders keep it navigable, auto-organize can file new uploads for you, and skills tell Apers how to work with specific files.
+
+## Folders
+
+- **Create a folder** with **New folder**.
+- **Move files** by dragging them onto a folder, or select them and choose **Move to…**. The **Move to…** dialog can also create a new folder to move them into.
+- **Upload a whole folder** and its subfolders come with it.
+- **Upload a .zip** and Apers unpacks it into its files and folders.
+- **Upload Outlook emails** (.msg) and **SVG images** alongside your other files. Apers reads the email, and converts SVGs to PNG.
+
+For size limits and the other supported formats, see [Uploading & Understanding Documents](/ingestion).
+
+## Auto-Organize Uploads
+
+Turn on **Auto-organize uploads**, under the upload area of a deal's Data Room, and Apers organizes new uploads into folders and tidies up their filenames.
+
+- It's a per-deal setting.
+- It only affects new uploads. Files already in the Data Room stay where they are.
+- Turn it off to leave new uploads exactly as you name them.
+
+## Skills
+
+A skill is a set of instructions Apers reads before working with something, such as how to drive a particular workbook or how to lay out a model the way your firm does. Apers uses the open Agent Skills format: a folder containing a `SKILL.md` file, plus any reference files it needs.
+
+### Where skills show up
+
+Skills in the top level of the Data Room are grouped together in a pinned **Skills Loaded** row at the top of the file tree, collapsed to a count until you open it. "Loaded" means Apers has them in view while it works on the deal. In your Library, the same row reads **Available Skills**, since Library skills aren't in use until you add them to a deal.
+
+### Adding a skill
+
+<Steps>
+  <Step title="Upload a skill folder">
+    Upload a folder (or a .zip of one) with a `SKILL.md` at its top. Apers recognizes it as a skill automatically. A skill written for other tools that use the same format uploads unchanged.
+  </Step>
+  <Step title="Or add a skill to a spreadsheet">
+    Open the triple-dot menu (⋮) on an .xlsx file and choose **Add Skill** to write instructions for that workbook. Once it has one, the same menu item reads **View Skill**.
+  </Step>
+  <Step title="Or get one from the Marketplace">
+    Many Marketplace models come with a skill that tells Apers how to use them. See [Marketplace](/marketplace/overview).
+  </Step>
+</Steps>
+
+### Downloading a skill
+
+Choose **Download Skill** from a skill's menu to save it as a .zip in the standard format, ready to use in other tools that support Agent Skills.
+
+<Tip>
+  Skills are a good home for your firm's conventions: how you name tabs, which assumptions you default to, how a memo should be structured. Save them to your [Library](/library/01-overview) and add them to any deal where they apply.
+</Tip>
