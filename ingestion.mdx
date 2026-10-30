@@ -15,7 +15,7 @@ Uploading files to Apers is simple:
 3. Apers will automatically begin processing your files
 
 <Tip>
-You can upload multiple files at once. Apers will process each file individually and display its status.
+You can upload up to 100 files at once, including whole folders and `.zip` archives (Apers unpacks archives on arrival). Apers will process each file individually and display its status.
 </Tip>
 
 You can also send documents to Apers by email, without opening the app. See [Email to Apers](/email-to-apers).
@@ -38,7 +38,7 @@ Scanned PDFs are fully supported. Apers uses OCR to extract text from scanned do
 </Tip>
 
 <Note>
-Each file can be up to 30 MB, and images up to 5 MB each. Legacy and macro-enabled Office files such as `.xls`, `.xlsm`, `.doc`, and `.ppt` are converted to their modern equivalent (`.xlsx`, `.docx`, `.pptx`) on upload; macros and VBA are not preserved.
+Each file can be up to 30 MB, except PDFs and `.zip` archives, which can be up to 100 MB. Legacy and macro-enabled Office files such as `.xls`, `.xlsm`, `.doc`, and `.ppt` are converted to their modern equivalent (`.xlsx`, `.docx`, `.pptx`) on upload; macros and VBA are not preserved.
 </Note>
 
 ## File Processing Statuses
@@ -48,7 +48,7 @@ Once uploaded, Apers processes your files through several stages. You can track 
 <ResponseField name="Uploaded" type="status">
   The file has been uploaded to Apers but has not been processed.
 
-  This typically occurs when a new file is created by Apers directly. AI-generated files are not automatically incorporated into processing unless you specifically click **Summarize** from the triple-dot icon (⋮).
+  This typically occurs when a new file is created by Apers directly. AI-generated files are not automatically processed. To process one, click its status indicator and select **Process Document**.
 </ResponseField>
 
 <ResponseField name="Preparing" type="status">
@@ -59,6 +59,10 @@ Once uploaded, Apers processes your files through several stages. You can track 
   Apers performs OCR (Optical Character Recognition), especially for scanned documents, to understand the structure and extract key information.
 </ResponseField>
 
+<ResponseField name="Parsed" type="status">
+  Text has been extracted from the file and Apers is about to read it.
+</ResponseField>
+
 <ResponseField name="Distilling" type="status">
   Apers uses its AI capability to quickly read and understand the entire document.
 </ResponseField>
@@ -66,9 +70,17 @@ Once uploaded, Apers processes your files through several stages. You can track 
 <ResponseField name="Failed" type="status">
   The system failed to process the file.
 
-  This can happen when the file type is not supported or if one of the processing steps failed. Click **Summarize** from the triple-dot icon (⋮) to restart the process.
+  This can happen when the file type is not supported or if one of the processing steps failed. Click the status indicator and select **Retry Processing** to try again.
 </ResponseField>
 
 <ResponseField name="Ready" type="status">
-  The file is fully processed. Apers understands the document, has compressed it, and completed OCR.
+  The file is fully processed. Apers understands the document, has compressed it, and completed OCR. Ready files show a green check mark instead of a label; click it to view the file's insights.
 </ResponseField>
+
+<ResponseField name="Learning" type="status">
+  The file changed after Apers read it, so its insights are being refreshed.
+</ResponseField>
+
+<Tip>
+If a file seems stuck at any stage, click its status indicator and select **Restart Processing**.
+</Tip>
