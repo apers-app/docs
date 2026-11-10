@@ -4,7 +4,7 @@ description: "Learn how to review and approve Apers' spreadsheet changes"
 icon: "brain"
 ---
 
-Before Apers makes changes to your spreadsheet, it shows you exactly what it plans to do. You stay in control.
+Apers shows you exactly what it plans to do to your spreadsheet. By default it then makes the change right away. If you'd rather approve each change first, turn off auto-approve.
 
 ## How Apers Thinks
 
@@ -14,22 +14,28 @@ When you give Apers a task, it first creates a plan. You can see:
 - **Planned changes**: Which cells it will update, create, or change
 - **Content preview**: The numbers and formulas Apers will use
 
-This transparency lets you review everything before it happens.
+This transparency lets you follow everything Apers does.
+
+## Auto-Approve
+
+Auto-approve is on by default: Apers makes its changes without pausing for your approval. It applies in every chat you start, and a workflow follows the same setting. A chat started by a [stage goal](/deals/pipeline-automation#stage-goals) uses that goal's own setting.
+
+To approve each change yourself, turn off the **Auto-approve** toggle in the chat composer. Apers then pauses before every change and waits for you. Your choice is remembered in that browser. Your phone has its own setting (see [Apers on Your Phone](/mobile)).
+
+<Warning>
+  With auto-approve on, Apers keeps working without stopping for your review, which can use more credits than expected.
+</Warning>
 
 ## Approval Options
 
-After Apers shows its plan, you choose what to do:
+With auto-approve off, Apers pauses after it shows its plan, and you choose what to do:
 
 <ResponseField name="Approve" type="action">
   Approves this single update. Apers will make the change and then pause for your next approval.
 </ResponseField>
 
 <ResponseField name="Always Approve" type="action">
-  Approves this change and turns on **auto-approve**. Apers will then make changes without pausing for approval, in every chat, until you turn auto-approve off with the auto-approve toggle below the chat box (**Auto-approve actions (skip confirmations)**).
-
-  <Warning>
-    Auto-approve can use more credits than expected, because Apers keeps working without stopping for your review. Recommended when you have sufficient credits.
-  </Warning>
+  Approves this change and turns **auto-approve** back on. Apers will then make changes without pausing for approval, in every chat, until you turn it off again.
 </ResponseField>
 
 <ResponseField name="Reject" type="action">
